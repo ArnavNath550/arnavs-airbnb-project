@@ -11,7 +11,7 @@
     padding-left: 0px;
     padding-right: 0px;
     position: relative;
-    top: 180px;
+    top: 20px;
     margin-bottom: 50px;
 }
 
@@ -110,20 +110,20 @@
 }
 
 .only-desktop {
-    display: block!important;
+    visibility: visible!important;
 }
 
 .only-mobile {
-    display: none!important;
+    visibility: hidden!important;
 }
 
 @media all and (max-width: 767px) {
     .only-desktop {
-        display: none!important;
+        visibility: hidden!important;
     }
 
     .only-mobile {
-        display: block!important;
+        visibility: visible!important;
     }
 }
 
