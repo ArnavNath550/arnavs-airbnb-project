@@ -1,0 +1,9 @@
+.arnavs-footer {
+    background-color: var(--black);
+    padding: 20px;
+    position: relative;
+}
+
+.arnavs-footer-heading {
+    color: var(--white);
+}

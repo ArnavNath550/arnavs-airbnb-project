@@ -1,0 +1,16 @@
+:root {
+    --primary: #ff385c;
+    --black: #222222;
+    --white: #fff;
+    --gray: #dddddd;
+    --darkGray: #ccc;
+    --explore_padding-inline: 40px;
+    --elevated-btn-box-shadow: 0 2px 4px rgba(0,0,0,0.18);
+    --expanded-search-bar__background: #ebebeb; 
+    --big-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    --slow-transition: cubic-bezier(0.35,0,0.65,1);
+    --breakpoint-grid_column-gap: 5;
+    --breakpoint-grid_row-gap: 5;
+    --card-layout_flex-direction: column;
+    --mobile-padding: 20px;
+}

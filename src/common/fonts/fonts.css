@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "circular";
+    font-weight: 700;
+    font-display: swap;
+    src: url(//assets1.zilingo.com/assets/stylesheets/fonts/circular/da46404a5ff7625aca912f9292d31a6a-lineto-circular-bold.woff2) format("woff2"), url(//assets1.zilingo.com/assets/stylesheets/fonts/circular/0f01eae4be59e6822c3e85c9bb49f17f-lineto-circular-bold.woff) format("woff"), url(//assets1.zilingo.com/assets/stylesheets/fonts/circular/9a9d17d22fc37972631f2bdcd369253c-CircularTT-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "circular";
+    font-weight: 400;
+    font-display: swap;
+    src: url(//assets1.zilingo.com/assets/stylesheets/fonts/circular/31ecf4807ac55a882fc8fd7c6e07d6f9-lineto-circular-book.woff2) format("woff2"), url(//assets1.zilingo.com/assets/stylesheets/fonts/circular/12d486e1e384137f830d9aa0725205ad-lineto-circular-book.woff) format("woff"), url(//assets1.zilingo.com/assets/stylesheets/fonts/circular/5275bdc44de4ed3bc95f6346aa491f90-CircularTT-Book.ttf) format('truetype');
+}

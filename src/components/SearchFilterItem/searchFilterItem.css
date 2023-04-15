@@ -1,0 +1,33 @@
+.search-filter-item {
+    cursor: pointer;
+    text-align: center;
+    background-color: unset;
+    border: unset;
+    padding: 4px 0 4px;
+    margin: 12px 0 10px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    transition: color 0.2s ease;
+}
+
+.search-filter-item.active {
+    border-bottom: 2px solid var(--black);
+}
+
+.search-filter-item:hover {
+    border-bottom: 2px solid var(--black);
+}
+
+.search-filter-name {
+    font-family: "Circular", sans-serif;
+    color: var(--black);
+    font-size: 13px;
+}
+
+.search-filter-name.active {
+    font-weight: 600;
+}
+
+.search-filter-name:hover {
+    font-weight: 600;
+}

@@ -1,0 +1,19 @@
+.map-search-item {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    width: 250px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.map-search-item:hover {
+    background-color: #f2f2f2;
+}
+
+.map-icon svg {
+    display: block; 
+    height: 22px; 
+    width: 22px; 
+    fill: currentcolor;
+}

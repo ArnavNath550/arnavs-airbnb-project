@@ -1,0 +1,6 @@
+.desktop-nav {
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    z-index: 10000;
+}

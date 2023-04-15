@@ -1,0 +1,30 @@
+.search-filter-options-container {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.05);
+    padding-left: var(--explore_padding-inline);
+    padding-right: var(--explore_padding-inline);
+    gap: 25px;
+     white-space: nowrap;
+     overflow-x: auto;
+}
+
+@media all and (max-width: 767px) {
+    .search-filter-options-container {
+        justify-content: flex-start;
+    }
+}
+
+.search-filter-item img {
+    opacity: 0.5;
+}
+
+.search-filter-name {
+    color: #555;
+}
+
+.search-filter-item.active img {
+    opacity: 1;
+}
+
+.search-filter-item.active .search-filter-name {
+    color: var(--black);
+}

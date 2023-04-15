@@ -1,0 +1,95 @@
+.place-card {
+    display: flex;
+    flex: 1 0 100%;
+    flex-direction: var(--card-layout_flex-direction);
+    gap: 12px;
+}
+
+.place-card-image {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.place-type-name {
+    font-weight: 600;
+    font-family: "Circular", sans-serif;
+    font-size: 16px;
+    color: var(--black);
+}
+
+.place-title-name {
+    font-weight: 500;
+    font-family: "Circular";
+    color: #555;
+}
+
+.place-beds-value {
+    font-weight: 500;
+    font-family: "Circular";
+    color: #555;
+}
+
+.place-availability-dates {
+    font-weight: 500;
+    font-family: "Circular";
+    font-size: 13px;
+    color: #555;
+}
+
+.place-price {
+    font-weight: 600;
+    font-family: "Circular";
+}
+
+.place-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.place-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.carousel-button-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.carousel-button {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin: 0;
+    text-align: inherit;
+    background-color: var(--white);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 20px;
+    transition: box-shadow 0.2s ease;
+    position: absolute;
+    top: 70px!important;
+    margin: 10px;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 0;
+}
+
+.carousel-button-next {
+    right: 0;
+}
+
+.carousel-button-prev {
+    left: 0;
+}

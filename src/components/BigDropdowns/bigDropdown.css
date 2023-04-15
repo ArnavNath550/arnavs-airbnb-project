@@ -1,0 +1,112 @@
+.big-dropdown-container {
+    background: var(--white);
+    border-radius: 32px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.04), 0 8px 16px rgba(0,0,0,0.15);
+    margin-top: 12px;
+    padding: 16px 32px;
+    max-height: calc(100vh - 150px);
+    position: absolute;
+    top: 100%;
+    z-index: 100;
+    max-height: calc(100vh - 200px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+@media all and (max-width: 767px) {
+    .big-dropdown-container {
+        left: 0!important;
+    }
+}
+
+.big-dropdown-item {
+    border-bottom: 1px solid rgb(235, 235, 235) !important;
+
+}
+
+@media all and (min-width: 767px) {
+    .big-dropdown-item {
+        min-width: 330px !important;
+    }
+}
+
+.big-dropdown-item {
+    -webkit-box-pack: justify !important;
+    -webkit-box-align: center !important;
+    color: rgb(34, 34, 34) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+    padding-right: 4px !important;
+}
+
+.dropdown-item-heading {
+    font-size: 16px !important;
+    line-height: 20px !important;
+    font-weight: 600 !important;
+    padding-bottom: 6px !important;
+    font-family: "Circular", sans-serif;
+}
+
+.dropdown-item-subheading {
+    font-size: 14px !important;
+    line-height: 18px !important;
+    font-weight: 400 !important;
+    color: rgb(113, 113, 113) !important;
+}
+
+.big-dropdown-action-item {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.qtyBtn {
+    border-color: var(--gray);
+    background: var(--white);
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: inline-block;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    border-color: black;
+    color: black;
+    font-family: inherit;
+    outline: none;
+    touch-action: manipulation;
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--black);
+    outline: none;
+}
+
+.qtyBtn span svg {
+    display: block; 
+    fill: none; 
+    height: 12px; 
+    width: 12px; 
+    stroke: currentcolor; 
+    stroke-width: 5.33333; 
+    overflow: visible;
+}
+
+.qtySelector {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+}

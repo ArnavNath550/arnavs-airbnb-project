@@ -1,0 +1,59 @@
+/* Define a CSS animation for zooming in */
+@keyframes zoomIn {
+    from {
+      transform: scale(0); /* Start with scale of 0 */
+    }
+    to {
+      transform: scale(1); /* End with scale of 1 */
+    }
+  }
+  
+  /* Define a CSS animation for zooming out */
+  @keyframes zoomOut {
+    from {
+      transform: scale(1); /* Start with scale of 1 */
+    }
+    to {
+      transform: scale(0); /* End with scale of 0 */
+    }
+  }
+
+  /* Apply the zoomIn animation */
+.zoomIn {
+  animation-name: zoomIn;
+  animation-duration: 0.3s; /* Set animation duration */
+  animation-timing-function: ease-in-out; /* Set animation timing function */
+}
+
+/* Apply the zoomOut animation */
+.zoomOut {
+  animation-name: zoomOut;
+  animation-duration: 0.3s; /* Set animation duration */
+  animation-timing-function: ease-in-out; /* Set animation timing function */
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1; /* animate opacity to 1 */
+    transform: translateY(0); /* animate translateY to 0 */
+  }
+}
+
+.fade-up-animation {
+  opacity: 0; /* set initial opacity to 0 */
+  transform: translateY(30px); /* set initial translateY value to move text 30px down */
+  animation: fadeUp 1s ease-out forwards; /* define the animation with a duration of 1 second, ease-out timing function, and forwards fill mode to retain the final state */
+}
+
+@keyframes fadeUpFast {
+  to {
+    opacity: 1; /* animate opacity to 1 */
+    transform: translateY(0); /* animate translateY to 0 */
+  }
+}
+
+.fast-fade-up-animation {
+  opacity: 0; /* set initial opacity to 0 */
+  transform: translateY(30px); /* set initial translateY value to move text 30px down */
+  animation: fadeUp 0.2s ease-out forwards; /* define the animation with a duration of 1 second, ease-out timing function, and forwards fill mode to retain the final state */
+}

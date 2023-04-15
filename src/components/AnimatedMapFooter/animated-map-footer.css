@@ -1,0 +1,50 @@
+.animated-map-footer {
+    -webkit-box-pack: center !important;
+    position: fixed !important;
+    display: flex !important;
+    visibility: visible !important;
+    justify-content: center !important;
+    z-index: 8 !important;
+    white-space: nowrap !important;
+    transition: -ms-transform 0.2s ease-in-out 0s, -webkit-transform 0.2s ease-in-out 0s, transform 0.2s ease-in-out 0s, opacity 0.15s linear 0s, visibility 0s ease 0s !important;
+    margin-bottom: 24px !important;
+    bottom: 70px;
+    z-index: 1999;
+    -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.455,0.03,0.515,0.955);
+    width: 100%;
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+.map-btn {
+    -webkit-box-pack: center !important;
+    -webkit-box-align: center !important;
+    appearance: none !important;
+    display: inline-flex !important;
+    border-radius: 24px !important;
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    outline: none !important;
+    margin: 0px !important;
+    padding: 11px 19px !important;
+    color: var(--black) !important;
+    cursor: pointer !important;
+    touch-action: manipulation !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: none !important;
+    transition: -ms-transform 0.25s ease 0s, -webkit-transform 0.25s ease 0s, transform 0.25s ease 0s !important;
+    background: rgb(34, 34, 34) !important;
+    gap: 8px;
+}
+
+.map-btn div {
+    color: var(--white);
+    font-family: "Circular", sans-serif;
+}
+
+.map-btn .map-btn-icon svg {
+    display: block; 
+    height: 16px; 
+    width: 16px; 
+    fill: var(--white);
+}

@@ -1,0 +1,64 @@
+.bottom-nav {
+    -webkit-box-align: center !important;
+    display: flex !important;
+    align-items: center !important;
+    border-top: 1px solid rgb(235, 235, 235) !important;
+    position: fixed !important;
+    bottom: -60px !important;
+    height: 60px !important;
+    left: 0px !important;
+    right: 0px !important;
+    padding-bottom: 66px !important;
+    contain: paint !important;
+    background: rgb(255, 255, 255) !important;
+    transition: -ms-transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s, -webkit-transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s, transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s, visibility 0.2s ease 0s !important;
+    z-index: 1 !important;
+    justify-content: center;
+}
+
+.bottom-nav ul {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.bottom-nav ul li {
+    text-align: -webkit-center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-nav ul li svg {
+    display: block;
+    fill: none;
+    height: 24px;
+    width: 24px;
+    stroke-width: 3px;
+    fill: currentcolor;
+    color: rgb(176, 176, 176) !important;
+    position: relative !important;
+    overflow: visible;
+}
+
+.bottom-nav ul li.active svg {
+    stroke: var(--primary)!important;
+}
+
+.bottom-nav ul li .bottom-nav-label {
+    font-family: "Circular", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: #555;
+}
+
+
+.bottom-nav ul li.active .bottom-nav-label {
+    color: var(--black);
+}

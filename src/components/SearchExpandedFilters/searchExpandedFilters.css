@@ -1,0 +1,41 @@
+.expanded-filters-tab {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.expanded-filter-tab {
+    font-size: 18px;
+    font-weight: 500;
+    color: #555;
+    padding-bottom: 10px;
+    font-family: "Circular";
+    cursor: pointer;
+}
+
+.expanded-filter-tab:after {
+    transform: scaleX(1);
+    background-color: #222;
+    inset-inline: 0;
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
+    content: '';
+    height: 2px;
+    position: absolute;
+    top: calc(100% + 8px);
+    -webkit-transition: -webkit-transform 0.2s ease;
+    width: 100%;
+    color: #222222 !important;
+}
+
+.expanded-filter-tab.active {
+    border-bottom: 2px solid #333;
+}
+
+.expanded-filter-tab:hover {
+    border-bottom: 2px solid #333 ;
+    transition: border-bottom 0.1s ease-in-out; /* Define transition property, duration, and easing */
+}
