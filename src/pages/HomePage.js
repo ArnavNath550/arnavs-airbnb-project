@@ -13,23 +13,34 @@ import RepoPromotionalHeader from '../components/RepoPromotionalHeader'
 const HomePage = () => {
     const [show, setShow] = React.useState(false);
     const [selectedTab, setSelectedTab] = React.useState("");
+
+    const [searchProcess, setSearchProcess] = React.useState("BASIC");
   
     React.useEffect(() => {
+      let timeoutId; // Variable to store timeout ID
+    
       const handleScroll = () => {
-        // Calculate the scroll position
-        const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-  
-        // Update the class based on the scroll position
-        if (scrollPosition > 0) {
-          setShow(true);
-        } else {
-          setShow(false);
-        }
+        // Clear previous timeout
+        clearTimeout(timeoutId);
+    
+        // Set a new timeout to run the scroll logic after a delay (e.g. 100ms)
+        timeoutId = setTimeout(() => {
+          // Calculate the scroll position
+          const scrollPosition =
+            window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+    
+          // Update the class based on the scroll position
+          if (scrollPosition > 0) {
+            setSearchProcess("BASIC");
+          } else {
+            
+          }
+        }, 100); // Change the delay value as needed
       };
-  
+    
       // Add scroll event listener
       window.addEventListener('scroll', handleScroll);
-  
+    
       // Clean up the event listener on unmount
       return () => {
         window.removeEventListener('scroll', handleScroll);
@@ -40,7 +51,7 @@ const HomePage = () => {
     <>
       <RepoPromotionalHeader />
       <div className='only-desktop desktop-nav'>
-        <SearchFilterHeader close={show} setSelectedTab={setSelectedTab} />
+        <SearchFilterHeader close={show} searchProcess={searchProcess} setSearchProcess={setSearchProcess} setSelectedTab={setSelectedTab} />
         <SearchFilterOptions />
       </div>
       <div className='only-mobile'>

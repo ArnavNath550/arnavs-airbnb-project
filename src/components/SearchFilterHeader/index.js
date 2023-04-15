@@ -4,8 +4,7 @@ import SearchFilterSearchBar from './SearchFilterSearchBar'
 import SearchBarExpanded from './SearchBarExpanded'
 import SearchFilterOptions from '../SearchFilterOptions'
 
-const SearchFilterHeader = ({close, setSelectedTab}) => {
-  const [searchProcess, setSearchProcess] = React.useState("BASIC");
+const SearchFilterHeader = ({close, searchProcess, setSearchProcess, setSelectedTab}) => {
   return (
     <header className={`search-filter-header ${searchProcess == "FILTER" ? "expanded" : ""}`}> 
         <a className="search-filter-header-item">
