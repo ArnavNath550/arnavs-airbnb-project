@@ -114,7 +114,7 @@
 }
 
 .only-mobile {
-    display: none;
+    display: none!important;
 }
 
 @media all and (max-width: 767px) {

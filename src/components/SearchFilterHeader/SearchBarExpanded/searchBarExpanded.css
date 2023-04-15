@@ -169,7 +169,3 @@
     transform: translateY(30px); /* set initial translateY value to move text 30px down */
     animation: fadeUp 0.2s ease-out forwards; /* define the animation with a duration of 1 second, ease-out timing function, and forwards fill mode to retain the final state */
 }
-
-@media all and(max-width: 767px) {
-    
-}
