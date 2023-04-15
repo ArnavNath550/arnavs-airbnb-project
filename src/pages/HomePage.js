@@ -8,6 +8,7 @@ import PlacesGrid from '../components/PlacesGrid'
 import OverlayShadow from '../components/OverlayShadow'
 import '../common/styles/navigation.css'
 import Footer from '../components/Footer'
+import RepoPromotionalHeader from '../components/RepoPromotionalHeader'
 
 const HomePage = () => {
     const [show, setShow] = React.useState(false);
@@ -37,6 +38,7 @@ const HomePage = () => {
 
   return (
     <>
+      <RepoPromotionalHeader />
       <div className='only-desktop desktop-nav'>
         <SearchFilterHeader close={show} setSelectedTab={setSelectedTab} />
         <SearchFilterOptions />

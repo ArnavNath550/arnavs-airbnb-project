@@ -1,0 +1,11 @@
+.repo-promotional-header {
+    font-family: "Circular", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #fff;
+    text-align: -webkit-center;
+    width: 100%;
+    padding: 10px;
+}
